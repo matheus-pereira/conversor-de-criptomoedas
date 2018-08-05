@@ -7,7 +7,7 @@ class CoinmarketcapService {
 
     list() {
         return new Promise((resolve, reject) => {
-            this.http.request('GET', `${this.baseUrl}/v1/ticker/?convert=BRL&limit=10`)
+            this.http.request('GET', `${this.baseUrl}/v1/ticker/?convert=BRL&limit=20`)
                 .then((data) => {
                     resolve(JSON.parse(data));
                 })
